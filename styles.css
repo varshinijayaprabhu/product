@@ -1,0 +1,273 @@
+:root {
+  color-scheme: light;
+  --bg: #f5f0e8;
+  --bg-alt: #efe5d6;
+  --text: #1e1b16;
+  --muted: #6a6257;
+  --card: rgba(255, 255, 255, 0.82);
+  --line: rgba(30, 27, 22, 0.12);
+  --accent: #0b6b53;
+  --accent-strong: #094b3a;
+  --shadow: 0 18px 50px rgba(35, 28, 19, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top left, rgba(11, 107, 83, 0.14), transparent 30%),
+    radial-gradient(circle at right top, rgba(177, 120, 44, 0.18), transparent 28%),
+    linear-gradient(180deg, var(--bg), var(--bg-alt));
+  min-height: 100vh;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: linear-gradient(rgba(30, 27, 22, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(30, 27, 22, 0.03) 1px, transparent 1px);
+  background-size: 34px 34px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6), transparent 92%);
+}
+
+.shell {
+  width: min(1160px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 32px 0 48px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: end;
+  padding: 28px 0 18px;
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font: 700 12px/1.2 'Trebuchet MS', sans-serif;
+  color: var(--accent-strong);
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+}
+
+.lede {
+  margin: 14px 0 0;
+  max-width: 56ch;
+  font: 400 1.05rem/1.7 'Trebuchet MS', sans-serif;
+  color: var(--muted);
+}
+
+.lede span {
+  font-family: Consolas, 'Courier New', monospace;
+  color: var(--accent-strong);
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(120px, 1fr));
+  gap: 12px;
+}
+
+.stats div {
+  min-width: 140px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--card);
+  backdrop-filter: blur(14px);
+  box-shadow: var(--shadow);
+}
+
+.stats span {
+  display: block;
+  font: 700 2rem/1 'Trebuchet MS', sans-serif;
+}
+
+.stats small {
+  color: var(--muted);
+  font: 600 0.82rem/1.2 'Trebuchet MS', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.toolbar {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr auto;
+  gap: 14px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.58);
+  backdrop-filter: blur(16px);
+  box-shadow: var(--shadow);
+}
+
+.inputGroup {
+  display: grid;
+  gap: 8px;
+  font: 700 0.8rem/1.2 'Trebuchet MS', sans-serif;
+  color: var(--muted);
+}
+
+.inputGroup input,
+.inputGroup select,
+button {
+  appearance: none;
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid rgba(30, 27, 22, 0.16);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.86);
+  color: var(--text);
+  font: 600 1rem/1.2 'Trebuchet MS', sans-serif;
+}
+
+.inputGroup input:focus,
+.inputGroup select:focus,
+button:focus {
+  outline: 3px solid rgba(11, 107, 83, 0.18);
+  outline-offset: 2px;
+}
+
+button {
+  align-self: end;
+  cursor: pointer;
+  background: linear-gradient(180deg, var(--accent), var(--accent-strong));
+  color: white;
+  min-width: 120px;
+}
+
+.metaRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 4px 14px;
+  color: var(--muted);
+  font: 600 0.95rem/1.4 'Trebuchet MS', sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: var(--card);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(18px);
+  transition: transform 160ms ease, border-color 160ms ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(11, 107, 83, 0.24);
+}
+
+.cardTop {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.productId {
+  margin: 0 0 6px;
+  color: var(--accent-strong);
+  font: 700 0.82rem/1.2 Consolas, 'Courier New', monospace;
+}
+
+.productName {
+  margin: 0;
+  font-size: 1.3rem;
+  line-height: 1.15;
+}
+
+.price {
+  white-space: nowrap;
+  font: 700 1rem/1.2 'Trebuchet MS', sans-serif;
+  color: var(--accent-strong);
+}
+
+.details {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+}
+
+.details div {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: 8px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(30, 27, 22, 0.08);
+}
+
+dt {
+  color: var(--muted);
+  font: 700 0.76rem/1.3 'Trebuchet MS', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+dd {
+  margin: 0;
+  font: 600 0.96rem/1.3 'Trebuchet MS', sans-serif;
+}
+
+.emptyState {
+  padding: 42px 18px;
+  text-align: center;
+  color: var(--muted);
+  border: 1px dashed rgba(30, 27, 22, 0.18);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.52);
+}
+
+@media (max-width: 820px) {
+  .hero,
+  .toolbar {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+
+  .stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cardTop,
+  .details div {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+}
+
+@media (max-width: 560px) {
+  .shell {
+    width: min(100% - 20px, 1160px);
+    padding-top: 18px;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+}

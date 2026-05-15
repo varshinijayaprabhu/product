@@ -1,0 +1,62 @@
+ProductID,ProductName,Category,Brand,SubCategory,UnitPrice,ManufacturingCountry
+P001,iPhone 15 Pro,Electrncs,,Smartphones,999.99,USA
+P006,Apple AirPods Pro,electronics,Apple,Headphones,249.99,USA
+P047,Mascara,BEAUTY,Maybelline,Cosmetics,12.99,USA
+P032,Ninja Air Fryer,H&K,Ninja,Cookware,99.99,USA
+P014,Women's Floral Dress,Apparel,Zara,Dresses,59.99,Spain
+P056,Camping Tent 4-Person,sports,Coleman,Camping,179.99,USA
+P035,Nespresso Machine,HOME & KITCHEN,Unknown,Coffee,199.99,Switzerland
+P050,Nail Polish Set,beauty,OPI,Cosmetics,25.99,USA
+P013,Men's Polo T-Shirt  ,APPAREL,Ralph Lauren,Tops,89.5,USA
+P041,Retinol Face Serum,Beauty,CeraVe,Skincare,19.99,USA
+P034,Dyson V15 Vacuum,Home & Kitchen,Dyson,Appliances,749.99,UK
+P060,FOAM ROLLER,Sports & Outdoors,Unknown,Recovery,39.99,
+P017,Running Shoes,Clothing,Nike,Footwear,-1.0,USA
+P004,Dell XPS 15,ELECTRONICS,Dell,Laptops,1199.99,USA
+P054,Cycling Helmet,SPORTS,Giro,Cycling,89.99,USA
+P018,Casual Sneakers  ,clothing,Adidas,Footwear,89.99,Germany
+P009,"iPad Pro 12.9""",Elec,Apple,Tablets,1099.99,USA
+P007,"LG OLED TV 55""",Elec,LG,Televisions,1499.99,
+P042,Vitamin C Moisturizer,Beauty,TruSkin,Skincare,29.99,USA
+P005,Sony WH-1000XM5,ELECTRONICS,Sony,Headphones,349.99,Japan
+P045,Electric Toothbrush,Beauty & Care,Oral-B,Dental,79.99,Germany
+P020,Wool Sweater,clothing,H&M,Tops,-9.99,Sweden
+P048,Lip Gloss Set,beauty,NYX,Cosmetics,18.99,USA
+P053,Resistance Bands Set,SPORTS & OUTDOORS,Fit Simplify,,29.99,USA
+P026,Almond Butter 400g,food,Justin's,Spreads,11.99,
+P058,Water Bottle 1L,SPORTS,Hydro Flask,Hydration,44.95,USA
+P016,Women's Trench Coat,Clothing,Burberry,Outerwear,499.0,
+P059,Jump Rope,sports,WOD Nation,Fitness,14.99,USA
+P028,Cheddar Cheese 500g,food,Tillamook,Dairy,7.49,USA
+P010,Kindle Paperwhite,Electrncs,Amazon,E-Readers,139.99,USA
+P031,Instant Pot 6Qt,Home,Instant Pot,Cookware,0.0,Canada
+P037,Blackout Curtains 2pk,home & kitchen,Deconovo,Decor,35.99,China
+P027,Brown Rice 2kg  ,groceries,Unknown,Grains,8.99,USA
+P025,Extra Virgin Olive Oil,GROCERIES,Unknown,Pantry,12.99,Italy
+P044,Shampoo & Conditioner,BEAUTY,Olaplex,Hair Care,56.0,USA
+P012,Women's Yoga Pants,Clothing,Lululemon,Activewear,98.0,Canada
+P033,KitchenAid Stand Mixer,Home,KitchenAid,Appliances,449.99,USA
+P055,Tennis Racket,SPORTS,Wilson,Racket Sports,89.99,USA
+P057,Hiking Backpack 50L,Sports & Outdoors,Unknown,Hiking,199.99,USA
+P038,Cast Iron Skillet,HOME,Lodge,Cookware,34.99,USA
+P030,Sparkling Water 12pk,GROCERIES,LaCroix,,5.99,USA
+P046,Perfume 100ml,beauty,Dior,Fragrance,149.0,France
+P002,Samsung Galaxy S24,Electrncs,Unknown,Smartphones,849.99,South Korea
+P022,FREE RANGE EGGS 12PK,food,Happy Eggs,,5.99,UK
+P003,MacBook Air M3,Electrncs,Apple,Laptops,1299.99,USA
+P049,Beard Trimmer,beauty,Philips,Grooming,59.99,
+P040,Cordless Drill,HOME & KITCHEN,DeWalt,,129.0,
+P036,Bed Sheet Set Queen,Home,Brooklinen,Bedding,149.0,USA
+P024,Greek Yogurt 500g,food,Chobani,Dairy,0.0,USA
+P051,Yoga Mat 6mm,Sports,Manduka,Yoga,88.0,USA
+P011,Men's Slim Fit Jeans,Apparel,Levi's,Bottoms,69.99,USA
+P023,Sourdough Bread 800g,FOOD & BEV,Pepperidge Farm,Bakery,4.29,USA
+P019,Sports Bra,clothing,Under Armour,Activewear,45.0,USA
+P039,Water Filter Pitcher,Home & Kitchen,Brita,Appliances,29.99,Germany
+P021,Organic Whole Milk 1L,groceries,Organic Valley,,3.49,
+P008,"Samsung 4K TV 65""",Elec,Samsung,Televisions,1099.99,South Korea
+P043,SPF 50 Sunscreen,BEAUTY,EltaMD,Skincare,39.99,USA
+P015,Men's Winter Jacket  ,APPAREL,North Face,Outerwear,249.0,USA
+P029,Orange Juice 1L  ,GROCERIES,Tropicana,Beverages,4.99,USA
+P052,Dumbbell Set 20kg,Sports,Bowflex,Fitness,149.99,USA
+P039,Water Filter Pitcher,Home & Kitchen,Brita,Appliances,29.99,Germany

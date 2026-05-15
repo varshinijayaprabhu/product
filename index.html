@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Catalog</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Product catalog</p>
+          <h1>Browse the inventory with live filters.</h1>
+          <p class="lede">
+            Search across the CSV-backed catalog, narrow by category, and inspect the normalized product details in a
+            single responsive view.
+          </p>
+        </div>
+
+        <div class="stats" aria-label="Catalog summary">
+          <div>
+            <span id="totalCount">0</span>
+            <small>Total products</small>
+          </div>
+          <div>
+            <span id="visibleCount">0</span>
+            <small>Visible products</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="toolbar" aria-label="Filters">
+        <label class="inputGroup" for="searchInput">
+          Search
+          <input id="searchInput" type="search" placeholder="Search by name, brand, country, or ID" />
+        </label>
+
+        <label class="inputGroup" for="categorySelect">
+          Category
+          <select id="categorySelect">
+            <option value="">All categories</option>
+          </select>
+        </label>
+
+        <button id="resetButton" type="button">Reset</button>
+      </section>
+
+      <section class="metaRow" aria-live="polite">
+        <div id="statusText">Loading products...</div>
+      </section>
+
+      <section id="grid" class="grid" aria-label="Products"></section>
+    </main>
+
+    <template id="cardTemplate">
+      <article class="card">
+        <div class="cardTop">
+          <div>
+            <p class="productId"></p>
+            <h2 class="productName"></h2>
+          </div>
+          <div class="price"></div>
+        </div>
+
+        <dl class="details">
+          <div>
+            <dt>Category</dt>
+            <dd class="category"></dd>
+          </div>
+          <div>
+            <dt>Brand</dt>
+            <dd class="brand"></dd>
+          </div>
+          <div>
+            <dt>Subcategory</dt>
+            <dd class="subCategory"></dd>
+          </div>
+          <div>
+            <dt>Country</dt>
+            <dd class="country"></dd>
+          </div>
+        </dl>
+      </article>
+    </template>
+  </body>
+</html>
