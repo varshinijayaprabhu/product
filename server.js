@@ -189,7 +189,10 @@ const server = http.createServer((req, res) => {
   const requestUrl = url.parse(req.url, true);
 
   if (requestUrl.pathname === '/') {
-    serveFile(res, docsPath, 'text/html; charset=utf-8');
+    const search = (requestUrl.query.search || '').toString().trim().toLowerCase();
+    const category = (requestUrl.query.category || '').toString().trim().toLowerCase();
+
+    sendJson(res, 200, buildPayload(filterProducts(search, category)));
     return;
   }
 

@@ -123,7 +123,7 @@ class CatalogHandler(BaseHTTPRequestHandler):
         category = params.get('category', [''])[0].strip().lower()
 
         if parsed.path == '/':
-            self._html(200, DOCS_PATH.read_bytes())
+            self._json(200, build_payload(filter_products(search, category)))
             return
 
         if parsed.path == '/index.html':
